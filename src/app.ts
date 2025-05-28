@@ -1,4 +1,4 @@
-import express, { Application, Request, Response } from "express";
+import express, { Application, Request, Response } from 'express';
 
 export class App {
   public app: Application;
@@ -14,8 +14,8 @@ export class App {
   }
 
   private routes(): void {
-    this.app.get("/", (_req: Request, res: Response) => {
-      res.send("Hello World");
+    this.app.get('/', (_req: Request, res: Response) => {
+      res.send('Hello World');
     });
   }
 
